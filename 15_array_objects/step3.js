@@ -10,7 +10,7 @@ addItemBtn.onclick = () => {
     
     let output = '';
     for (key in someObject) {
-        output+=`<p>someObject[${key}] = ${value}</p>`;
+        output+=`<p>someObject[${key}] = ${someObject[key]}</p>`;
     }
     outputDiv.innerHTML = output;
 };
