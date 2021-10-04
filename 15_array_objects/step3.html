@@ -6,12 +6,27 @@
     <script defer src="/15_array_objects/step3.js"></script>
   </head>
   <body>
-      <label for="some-object-key">Ключ:</label>
-      <input id="some-object-key" type="text">
-      <label for="some-object-value">Значение:</label>
-      <input id="some-object-value" type="text">
-      <button id="addItem">Добавить запись</button>
-      <h1>Список записей</h1>
-      <div id="output"></div>
+    <h2>Форма ввода пар значений</h2>
+    <form onsubmit="addItem()">
+      <p>
+        <label for="some-object-key">Ключ:</label>
+        <input id="some-object-key" type="text" />
+      </p>
+      <p>
+        <label for="some-object-value">Значение:</label>
+        <input id="some-object-value" type="text" />
+      </p>
+      <p><button type="submit">Добавить запись</button></p>
+    </form>
+    <h2>Список записей</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Ключ</th>
+          <th>Значение</th>
+        </tr>
+      </thead>
+      <tbody id="output"></tbody>
+    </table>
   </body>
 </html>
