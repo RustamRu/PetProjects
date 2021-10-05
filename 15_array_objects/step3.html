@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/15_array_objects/step3.js"></script>
+    <script src="/15_array_objects/step3.js"></script>
   </head>
   <body>
     <h2>Форма ввода пар значений</h2>
-    <form onsubmit="addItem()">
+    <form onsubmit="addItem(); return false">
       <p>
         <label for="some-object-key">Ключ:</label>
         <input id="some-object-key" type="text" />

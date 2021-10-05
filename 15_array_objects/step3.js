@@ -1,16 +1,16 @@
 const someObject = {};
-const outputDiv = document.getElementById("output");
 
 addItem = () => {
-    let key = document.getElementById("some-object-key").value;
-    let value = document.getElementById("some-object-value").value;
+    const key = document.getElementById("some-object-key").value;
+    const value = document.getElementById("some-object-value").value;
+    const outputDiv = document.getElementById("output");
     someObject[key] = value;
     console.log(someObject);
 
     let output = '';
-    for (key in someObject) {
-        output += `<tr><td>${key}</td>
-        <td>${someObject[key]}</td></tr>`;
+    for (const item in someObject) {
+        output += `<tr><td>${item}</td>
+        <td>${someObject[item]}</td></tr>`;
     }
     outputDiv.innerHTML = output;
 };
