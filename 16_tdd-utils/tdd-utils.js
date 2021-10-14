@@ -3,7 +3,7 @@
     все условия ниже вывели в консоль true
 */
 const add = (a, b) => {
-    if (isNaN(a)) {
+    if (Number.isNaN(a) || a === undefined) {
         return 0;
     } else {
         return +a + +b;
