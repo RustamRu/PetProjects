@@ -17,6 +17,7 @@ console.log(add(NaN, 2) === 0);
 console.log(add('', 2) === 2);
 console.log(add() === 0);
 console.log(add(true, true) === 2);
+console.log(add(null, null) === 2);
 
 /**
  * Опишите функцию для map таким образом,

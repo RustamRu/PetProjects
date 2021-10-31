@@ -1,0 +1,44 @@
+:root {
+  --article-width: 400px;
+  --article-min-width: 100px;
+  --article-margin: 10px;
+}
+
+.news {
+  min-width: calc(3 * (var(--article-min-width) + 2 * var(--article-margin)));
+  /* overflow: hidden; */
+  background-color: beige;
+}
+.article {
+  box-sizing: border-box;
+  padding: 15px;
+}
+.news__article {
+  margin: var(--article-margin);
+}
+.article01,
+.article03 {
+  float: left;
+  width: var(--article-width);
+  flex-basis: var(--article-width);
+  flex-shrink: 0;
+  background-color: bisque;
+}
+.news__article01 {
+}
+.article02 {
+  float: left;
+  width: calc(100% - 2 * (var(--article-width) + 3 * var(--article-margin)));
+  min-width: var(--article-min-width);
+  background-color: powderblue;
+}
+.news__article02 {
+}
+.news__article03 {
+}
+
+@media (min-width: 0) {
+  .news {
+    display: flex;
+  }
+}
