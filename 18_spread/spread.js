@@ -59,5 +59,5 @@ console.log(zodiacSigns);
 const flowers = [...stuff[2][2], ...stuff[3].slice(0, 2)];
 console.log(flowers);
 
-const food = [...stuff[3][2], ...stuff[4][0][0].value, ...stuff[4][0][1].value, ...stuff[4][1][0].value, ...stuff[4][1][1].get(), ...stuff[4][2][0].get(), ...stuff[4][2][1].get()];
+const food = [stuff[3][2], stuff[4][0][0].value, stuff[4][0][1].value, stuff[4][1][0].value, stuff[4][1][1].get(), stuff[4][2][0].get(), stuff[4][2][1].get()];
 console.log(food);
