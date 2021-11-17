@@ -26,10 +26,10 @@ const stuff = [
  */
 
 const zodiacSigns = stuff.flat(2).slice(0, 12);
-console.log(zodiacSigns);
+// console.log(zodiacSigns);
 
 const flowers = stuff.flat(2).slice(13, 18);
-console.log(flowers);
+// console.log(flowers);
 
-const food = stuff.flat(2).slice(18).map(x => x.value ?? (x.get && x.get()) ?? x);
+const food = stuff.flat(2).slice(18).map(x => x.value ?? x.get?.() ?? x);
 console.log(food);
